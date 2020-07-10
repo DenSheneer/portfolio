@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #EEEEEE;
+    margin: 2%;
+}
+h1, h2 {
+    text-align: center;
+}
+.content {
+    overflow: hidden;
+}
+
+.mainTextWrapper{
+    border: 2px solid grey;
+    text-align: center;
+    margin-left: 24%;
+    height: 825px;
+}
+
+.mainText {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 18px;
+}
+
+.sideBar {
+    float: left;
+    width: 23%;
+    word-break: keep-all;
+    overflow: hidden;
+    border: 1px solid grey;
+    height: auto;
+}
+.sideBar img {
+    width: 100%;
+    height: auto;
+}
+
+.showcaseWrapper {
+    margin-top: 7.5%;
+    display: inline-flex;
+}
+.polaroid {
+    text-align: center;
+    padding: 10px 20px;
+}
+.polaroid img {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bottomText {
+    display: grid;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+ul li{
+    margin-left: 10%;
+    text-align: left;
+    padding-top: 2px;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+    color:darkcyan;
+}
+.infoList {
+    margin-bottom: 15%;
+}
+
+.infoList ul li:nth-child(1) {
+    list-style-image: url(../images/symbol_edu.png);
+}
+.infoList ul li:nth-child(2) {
+    list-style-image: url(../images/symbol_skills.png);
+}
+.infoList ul li:nth-child(3) {
+    list-style-image: url(../images/symbol_job.png);
+}
+
+.linkList ul li:nth-child(1){
+    list-style-image: url(../images/link_email.png);
+}
+.linkList ul li:nth-child(2){
+    list-style-image: url(../images/link_twitter.png);
+}
+.linkList ul li:nth-child(3){
+    list-style-image: url(../images/link_github.png);
+}
