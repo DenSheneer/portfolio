@@ -8,9 +8,6 @@ body {
 h1, h2 {
     text-align: center;
 }
-h2 {
-    padding: 0;
-}
 .content {
     overflow: hidden;
 }
@@ -18,7 +15,7 @@ h2 {
 .mainTextWrapper{
     border: 2px solid grey;
     text-align: center;
-    margin-left: 24%;
+    margin-left: 21%;
     height: 825px;
 }
 
@@ -30,13 +27,14 @@ h2 {
 
 .sideBar {
     float: left;
-    width: 23%;
+    width: 20%;
     word-break: keep-all;
     overflow: hidden;
     border: 1px solid grey;
-    height: 825px;
+    height: auto;
 }
 .sideBar img {
+    margin-left: 5%;
     width: 100%;
     height: auto;
 }
@@ -69,23 +67,35 @@ a, a:active, a:visited {
     text-decoration: none;
     color:darkcyan;
 }
-
-.infoList ul li:nth-child(1) {
-    list-style-image: url(../images/symbol_edu.png);
-}
-.infoList ul li:nth-child(2) {
-    list-style-image: url(../images/symbol_skills.png);
-}
-.infoList ul li:nth-child(3) {
-    list-style-image: url(../images/symbol_job.png);
+.listContainer {
+    margin-left: 1%;
 }
 
-.linkList ul li:nth-child(1){
-    list-style-image: url(../images/link_email.png);
+.listContainer p, .listContainer a {
+    display: inline-flex;
+    overflow: hidden;
+    margin-left: 1%;
 }
-.linkList ul li:nth-child(2){
-    list-style-image: url(../images/link_twitter.png);
+.listContainer:last-child{
+    margin-bottom: 10%;
 }
-.linkList ul li:nth-child(3){
-    list-style-image: url(../images/link_github.png);
+.listContainer img{
+    width: 45px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
