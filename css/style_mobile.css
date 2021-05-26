@@ -20,7 +20,8 @@
     font-size: 20px;
 }
 .polaroid {
-    border: 2px solid gray;
+    border: 2px solid lightgrey;
+    margin-bottom: 2%;
     display: inline-table;
     text-align: center;
     width: 90%;
@@ -41,7 +42,6 @@
     word-break: break-all;
     font-size: 16px;
     margin-left: 6%;
-    margin-top: 2%;
 }
 
 .sideBar .listContainer {
