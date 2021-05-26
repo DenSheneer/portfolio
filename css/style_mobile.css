@@ -1,33 +1,43 @@
 .mainText {
     margin: 6%;
+    font-size: 20px;
 }
 .polaroid {
+    border: 2px solid gray;
     display: inline-table;
     text-align: center;
     width: 90%;
 }
+
+.listContainer p, .listContainer a {
+    display: inline-flex;
+    margin-left: 1%;
+}
+
+.bottomText {
+    font-size: 18px;
+}
+
 .sideBar {
+    display:flex;
+    text-align: center;
+    word-break: break-all;
+    font-size: 16px;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+.sideBar .listContainer {
+    width: 15%;
+    margin-right: 5%;
+}
+
+
+.sideBar img:first-of-type, h1, h2 {
     display: none;
 }
 
-.mainTextWrapper{
-    width: 96vw;
-
+.sideBar .listContainer img {
+    display: initial;
+    width: 50%
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
