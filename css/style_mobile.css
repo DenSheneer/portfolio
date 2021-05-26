@@ -1,18 +1,18 @@
-.show
-
 .mainText {
-    margin: 5%;
+    margin: 6%;
 }
 .polaroid {
     display: inline-table;
     text-align: center;
+    width: 90%;
 }
 .sideBar {
     display: none;
 }
 
 .mainTextWrapper{
-    width: 100%;
+    width: 96vw;
+
 }
 
 
