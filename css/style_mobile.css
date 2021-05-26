@@ -1,0 +1,47 @@
+
+
+.mainTextWrapper{
+    border: 2px solid grey;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mainText {
+    font-size: 18px;
+    margin: 5%;
+}
+
+.sideBar {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.showcaseWrapper {
+    margin-top: 3%;
+}
+.polaroid {
+    display: inline-table;
+    text-align: center;
+}
+.polaroid img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
