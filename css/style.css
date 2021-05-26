@@ -1,4 +1,5 @@
 @import url('style_mobile.css') screen and (max-width: 800px);
+@import url('style_mobile.css') screen and (orientation: portrait);
 @import url('style_desktop.css') screen and (min-width: 801px);
 
 @font-face {
