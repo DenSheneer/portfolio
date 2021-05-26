@@ -1,8 +1,13 @@
 
 .portraitBubble {
     text-align: center;
+
+}
+
+.portraitBubble h1 {
     font-family: 'LeckerliOne-Regular';
     color: darkcyan;
+    display: block;
 }
 .portraitBubble img
 {
@@ -55,6 +60,6 @@
 }
 
 .sideBar .listContainer img {
-    display: initial;
+    display:inline;
     width: 50%
 }
