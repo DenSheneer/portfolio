@@ -8,16 +8,12 @@ body {
 
 .mainTextWrapper{
     float: right;
-    border: 2px solid grey;
-    text-align: center;
-    margin: 0 auto;
     width: 80%;
 }
 
 .mainText {
     padding-left: 20%;
     padding-right: 20%;
-    font-size: 18px;
 }
 
 .sideBar {
@@ -37,18 +33,9 @@ body {
     width: 100%;
 }
 
-.showcaseWrapper {
-    margin-top: 3%;
-}
 .polaroid {
-    display: inline-table;
     width: 550px;
-    text-align: center;
     padding: 10px 20px;
-}
-.polaroid img {
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 

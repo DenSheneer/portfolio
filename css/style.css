@@ -1,6 +1,6 @@
-@import url('style_mobile.css') screen and (max-width: 800px);
+
 @import url('style_mobile.css') screen and (orientation: portrait);
-@import url('style_desktop.css') screen and (min-width: 801px);
+@import url('style_desktop.css') screen and (orientation: landscape);
 
 @font-face {
     font-family: 'LeckerliOne-Regular';
@@ -27,8 +27,31 @@ a, a:active, a:visited {
     color:darkcyan;
 }
 
+.mainText {
+    font-size: 18px;
+}
+
+.mainTextWrapper{
+    border: 2px solid grey;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.showcaseWrapper {
+    margin-top: 3%;
+}
+
 .bottomText {
     display: grid;
     text-align: center;
     padding: 10px 20px;
+}
+.polaroid {
+    display: inline-table;
+    text-align: center;
+}
+
+.polaroid img {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
