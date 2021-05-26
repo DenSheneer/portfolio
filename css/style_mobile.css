@@ -1,6 +1,8 @@
 
 .portraitBubble {
     text-align: center;
+    font-family: 'LeckerliOne-Regular';
+    color: darkcyan;
 }
 .portraitBubble img
 {
@@ -43,7 +45,12 @@
 }
 
 
-.sideBar img:first-of-type, h1, h2 {
+.sideBar img:first-of-type  {
+    display: none;
+}
+.sideBar h1 {
+    display: none;
+}.sideBar h2 {
     display: none;
 }
 
