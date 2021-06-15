@@ -1,64 +1,80 @@
 body {
-    margin: 4%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.content {
+main {
     min-height: 85%;
+    position: relative;
+    display: flexbox;
+    float: right;
+    max-width: 74%;
+    border: 2px solid grey;
+    margin-top: 2%;
+}
+
+article h1 {
+    font-size: 40px;
 }
 .portraitBubble
 {
     display: none;
 }
 
-.mainTextWrapper{
-    border: 2px solid grey;
-    float: right;
-    width: 80%;
+
+article p {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
 }
 
-.mainText {
-    padding-left: 20%;
-    padding-right: 20%;
-    font-size: 18px;
-}
-
-.sideBar {
+aside {
+    position:sticky;
+    top: 2%;
+    left: 0;
+    margin-top: 2%;
+    margin-left: 2%;
     border: 1px solid grey;
-    float: left;
-    width: 18%;
-    height: auto;
+    max-width: 22%;
     word-break: break-all;
 }
 
-.sideBar h1:first-of-type {
+aside h1:first-of-type {
     font-family: 'LeckerliOne-Regular';
     color: darkcyan;
 }
 
-.sideBar img {
+
+aside img {
     width: 100%;
 }
 
-.polaroid {
-    width: 550px;
-    padding: 10px 20px;
+figure {
+    min-width: 725px;
+    border: 2px solid lightgrey;
+    display: inline-table;
+}
+figure figcaption {
+    text-align: center;
+    font-size: 18px;
 }
 
-
-.listContainer {
+li {
     height: auto;
     margin-left: 5%;
     margin-bottom: 5%;
 }
 
-.listContainer img {
+li img {
     display: inline-block;
     width: 15%;
     min-width: 25px;
     height: auto;
 }
 
-.listContainer p, .listContainer a {
+li p, li a {
+    font-size: 18px;
     display: inline-flex;
     margin-left: 3%;
 }

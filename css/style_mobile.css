@@ -1,7 +1,6 @@
-
 .portraitBubble {
     text-align: center;
-
+    margin-top: 10%;
 }
 
 .portraitBubble h1 {
@@ -9,55 +8,56 @@
     color: darkcyan;
     display: block;
 }
-.portraitBubble img
-{
+.portraitBubble img {
     width: 20%;
 }
 
-.mainText {
-    margin: 6%;
+ main article p{
     margin-top: 0%;
-    font-size: 22px;
+    margin-bottom: 6%;
+    margin-left: 9%;
+    margin-right: 9%;
+    font-size: 20px;
 }
-.polaroid {
+figure {
     border: 2px solid lightgrey;
     margin-bottom: 2%;
+    margin-left: 0;
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure figcaption p {
+    font-size: 18px;
+}
+
+aside {
     text-align: center;
-    max-width: 90%;
-}
-
-.listContainer p, .listContainer a {
-    display: inline-flex;
-    margin-left: 1%;
-}
-
-.bottomText {
-    font-size: 20px;
-}
-
-.sideBar {
-    display:flex;
-    text-align: center;
-    word-break: break-all;
-    justify-content: space-around;
-    font-size: 20px;
-}
-
-.sideBar .listContainer {
+    font-size: 18px;
     max-width: 15%;
 }
-
-
-.sideBar img:first-of-type  {
+aside picture  {
     display: none;
 }
-.sideBar h1 {
-    display: none;
-}.sideBar h2 {
+aside h1 {
     display: none;
 }
+aside h2 {
+    display: none;
+}
+li {
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 10%;
 
-.sideBar .listContainer img {
-    display:inline;
-    width: 50%
+}
+li img {
+    min-width: 70px;
+    max-width: 100px;
+}
+li a, li p {
+    margin-left: 10%;
 }

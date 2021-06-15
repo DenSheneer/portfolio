@@ -27,28 +27,25 @@ a, a:active, a:visited {
     color:darkcyan;
 }
 
-
-
-.mainTextWrapper{
-    text-align: center;
-    margin: 0 auto;
+li {
+   list-style: none;
 }
 
-.showcaseWrapper {
+article {
+    text-align: center;
+}
+
+article figure {
     margin-top: 3%;
 }
-
-.bottomText {
-    display: grid;
-    text-align: center;
-    padding: 10px 20px;
-}
-.polaroid {
-    display: inline-table;
+figure {
     text-align: center;
 }
+figure figcaption {
 
-.polaroid img {
+}
+
+figure img {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
