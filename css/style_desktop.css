@@ -43,6 +43,7 @@ aside {
 aside h1:first-of-type {
     font-family: 'LeckerliOne-Regular';
     color: darkcyan;
+    font-size: 35px;
 }
 
 
@@ -60,10 +61,10 @@ figure figcaption {
     font-size: 18px;
 }
 
-li {
+aside li {
     height: auto;
     margin-left: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 li img {

@@ -7,18 +7,25 @@
     font-family: 'LeckerliOne-Regular';
     color: darkcyan;
     display: block;
+    font-size: 35px;
 }
 .portraitBubble img {
     width: 20%;
 }
 
- main article p{
+ article p{
     margin-top: 0%;
     margin-bottom: 6%;
     margin-left: 9%;
     margin-right: 9%;
     font-size: 20px;
 }
+
+article h1 
+{
+    font-size: 30px;
+}
+
 figure {
     border: 2px solid lightgrey;
     margin-bottom: 2%;
