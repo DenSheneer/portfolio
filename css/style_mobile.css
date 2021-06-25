@@ -14,11 +14,10 @@
 }
 
  article p{
-    margin-top: 0%;
-    margin-bottom: 6%;
-    margin-left: 9%;
-    margin-right: 9%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 20px;
+    text-align: left;
 }
 
 article h1 
@@ -39,6 +38,7 @@ figure img {
 
 figure figcaption p {
     font-size: 18px;
+    text-align: center;
 }
 
 aside {

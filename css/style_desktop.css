@@ -7,8 +7,6 @@ body {
 main {
     margin-top: .5%;
     min-height: 85%;
-    position: relative;
-    display: flexbox;
     float: right;
     max-width: 74%;
     border: 2px solid grey;
@@ -24,9 +22,10 @@ article h1 {
 
 
 article p {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 24%;
+    padding-right: 24%;
     font-size: 20px;
+    text-align: left;
 }
 
 aside {
@@ -54,7 +53,7 @@ figure {
     border: 2px solid lightgrey;
     display: inline-table;
 }
-figure figcaption {
+figure figcaption, figure a, figure p {
     text-align: center;
     font-size: 18px;
 }
