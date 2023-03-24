@@ -8,7 +8,7 @@ main {
     margin-top: 0.5%;
     min-height: 85%;
     float: right;
-    max-width: 74%;
+    max-width: 80%;
     border: 2px solid grey;
 }
 
@@ -34,7 +34,7 @@ aside {
     left: 0;
     margin-left: 2%;
     border: 1px solid grey;
-    max-width: 22%;
+    max-width: 15%;
     word-break: break-all;
 }
 
@@ -50,6 +50,7 @@ aside img {
 
 figure {
     width: 75%;
+    max-width: 800px;
     border: 2px solid lightgrey;
     display: inline-table;
 }
@@ -75,6 +76,10 @@ li p, li a {
     font-size: 18px;
     display: inline-flex;
     margin-left: 3%;
+}
+.returnLink a h2
+{
+    width: 100%;
 }
 
 

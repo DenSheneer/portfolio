@@ -11,6 +11,7 @@
 }
 .portraitBubble img {
     width: 20%;
+    border-radius: 50%;
 }
 
  article p{
@@ -55,16 +56,20 @@ aside h1 {
 aside h2 {
     display: none;
 }
-li {
+aside li {
     font-size: 20px;
     display: flex;
     margin-bottom: 10%;
 
 }
-li img {
+aside li img {
     min-width: 70px;
     max-width: 100px;
 }
-li a, li p {
+aside li a, li p {
     margin-left: 10%;
+}
+.returnLink a h2
+{
+    width: 100vw;
 }
