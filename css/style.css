@@ -24,7 +24,7 @@ h1, h2 {
 
 a, a:active, a:visited {
     text-decoration: none;
-    color:darkcyan;
+    color:#087979;
 }
 
 aside li {
@@ -51,7 +51,7 @@ figure ul{
 }
 .returnLink a h2
 {
-    background-color: darkcyan;
+    background-color: #087979;
     color: #EEEEEE;
     border: 1px solid gray;
     float:left;
