@@ -34,6 +34,9 @@ aside li {
 article {
     text-align: center;
 }
+article p{
+    text-align: justify;
+}
 
 article figure {
     margin-top: 3%;

@@ -25,18 +25,18 @@ article p {
     padding-left: 12.5%;
     padding-right: 12.5%;
     font-size: 20px;
-    text-align: left;
 }
 
 aside {
     position:sticky;
     top: 1.75%;
     left: 0;
-    margin-left: 2%;
+    margin-left: 1%;
     border: 1px solid grey;
-    max-width: 15%;
-    word-break: break-all;
+    max-width: 17%;
+    word-break: keep-all;
 }
+
 
 aside h1:first-of-type {
     font-family: 'LeckerliOne-Regular';
@@ -60,7 +60,6 @@ figure figcaption, figure a, figure p {
 }
 
 aside li {
-    margin-left: 5%;
     align-content: space-between;
 }
 
