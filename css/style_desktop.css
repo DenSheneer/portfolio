@@ -48,7 +48,7 @@ aside img {
 }
 
 figure {
-    width: 75%;
+    width: 50%;
     border: 2px solid lightgrey;
     display: inline-table;
 }
