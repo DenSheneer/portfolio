@@ -5,11 +5,13 @@
 @font-face {
     font-family: 'LeckerliOne-Regular';
     src: url(../fonts/LeckerliOne-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Ubuntu';
     src: url(../fonts/Ubuntu-R.ttf);
+    font-display: swap;
 }
 
 body {
