@@ -20,7 +20,6 @@ article h1 {
     display: none;
 }
 
-
 article p {
     padding-left: 12.5%;
     padding-right: 12.5%;
@@ -50,13 +49,15 @@ aside img {
 
 figure {
     width: 75%;
-    max-width: 800px;
     border: 2px solid lightgrey;
     display: inline-table;
 }
 figure figcaption, figure a, figure p {
     text-align: center;
     font-size: 18px;
+}
+figure img {
+    width: 75px;
 }
 
 aside li {

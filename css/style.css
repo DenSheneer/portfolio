@@ -35,6 +35,7 @@ aside li {
 
 article {
     text-align: center;
+    width: 100%;
 }
 article p{
     text-align: justify;
