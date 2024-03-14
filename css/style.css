@@ -1,5 +1,5 @@
-
 @import url('style_mobile.css') screen and (orientation: portrait);
+
 @import url('style_desktop.css') screen and (orientation: landscape);
 
 @font-face {
@@ -26,24 +26,26 @@ h1, h2 {
 
 a, a:active, a:visited {
     text-decoration: none;
-    color:#087979;
+    color: #087979;
 }
 
 aside li {
-   list-style: none;
+    list-style: none;
 }
 
 article {
     text-align: center;
     width: 100%;
 }
-article p{
+
+article p {
     text-align: justify;
 }
 
 article figure {
     margin-top: 3%;
 }
+
 figure {
     text-align: center;
 }
@@ -52,14 +54,21 @@ figure img {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-figure ul{
+
+figure ul {
     text-align: left;
 }
-.returnLink a h2
-{
+
+.copyrightText p {
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
+.returnLink a h2 {
     background-color: #087979;
     color: #EEEEEE;
     border: 1px solid gray;
-    float:left;
+    float: left;
     display: inline;
 }
