@@ -17,14 +17,21 @@
     <meta charset="UTF-8" />
     <title>Denise's portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
     <main>
-        <div class="portraitBubble">
-            <img src="images/myPicture.webp" alt="portraitBubblePicture">
-            <h1>Denise Gerrits</h1>
-        </div>
+        <div id="portraitBubble"></div>
+        <script>
+            fetch('portraitBubble.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('portraitBubble').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching common HTML:', error));
+        </script>
+
         <article>
             <h1>Welcome to my webpage!</h1>
             <p>Hello, and thanks for visiting my webpage. My name is Denise, I'm 24 years old
@@ -143,22 +150,33 @@
         </article>
     </main>
     <aside>
-        <div class="portrait"><img src="images/myPicture.webp" alt="portraitPicture"></div>
-
-        <h1>Denise Gerrits</h1>
-
-        <h2>Links & contact</h2>
-        <ul>
-            <li>
-                <img src="images/link_github.svg" alt="gitHubLogo">
-                <a href="https://github.com/DenSheneer">GitHub</a>
-            </li>
-            <li>
-                <img src="images/link_linkedin.svg" alt="linkedInLogo">
-                <a href="https://linkedin.com/in/denise-g-678123215">Linkedin</a>
-            </li>
-        </ul>
+        <div id="aside"></div>
+        <div id="returnLink"></div>
+        
+    <script>
+        // Fetch and inject the aside content
+        fetch('aside.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('aside').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching aside HTML:', error));
+    
+        // Function to check the current page and inject the return link if necessary
+        window.onload = function() {
+            var currentPage = window.location.pathname.split("/").pop();
+            if (currentPage !== 'index.html') {
+                fetch('returnLink.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('returnLink').innerHTML = html;
+                    })
+                    .catch(error => console.error('Error fetching returnLink HTML:', error));
+            }
+        };
+    </script>
     </aside>
+
 </body>
 
 </html>
