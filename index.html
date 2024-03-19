@@ -5,11 +5,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3F5SLKPH7R"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-3F5SLKPH7R');
+        gtag('config', 'G-3F5SLKPH7R');
     </script>
 
 
@@ -51,13 +51,17 @@
             <figure>
                 <img src="images/fertSpray.webp" alt="BIO-VR-Game_Picture">
                 <figcaption>
-                        <a href="./BioVRGame.html"> <h3>BioVRCity</h3></a>
+                    <a href="./BioVRGame.html">
+                        <h3>BioVRCity</h3>
+                    </a>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/lumcMainPicture.webp" alt="lumcInternshipPicture">
                 <figcaption>
-                        <a href="./lumc.html"> <h3>LUMC - VR trainer for anesthesiologists</h3></a>
+                    <a href="./lumc.html">
+                        <h3>LUMC - VR trainer for anesthesiologists</h3>
+                    </a>
                 </figcaption>
             </figure>
             <figure>
@@ -65,12 +69,12 @@
                 <figcaption>
                     <h3>A tower defence game made with Unity.</h3>
                     <p>
-                        <ul>
-                            <li>Very open to expansion</li>
-                            <li>Option to add new mobs</li>
-                            <li>Easily customizable mob waves</li>
-                            <li>Individual Tower & Enemy properties are easily tweaked in the editor</li>
-                        </ul>
+                    <ul>
+                        <li>Very open to expansion</li>
+                        <li>Option to add new mobs</li>
+                        <li>Easily customizable mob waves</li>
+                        <li>Individual Tower & Enemy properties are easily tweaked in the editor</li>
+                    </ul>
                     </p>
                 </figcaption>
             </figure>
@@ -79,15 +83,15 @@
                 <figcaption>
                     <h3>A third person shooter in Unreal Engine 4 featuring:</h3>
                     <p>
-                        <ul>
-                            <li>Projectiles</li>
-                            <li>Third person aiming</li>
-                            <li>Pickups</li>
-                            <li>Player movement</li>
-                            <li>Menus</li>
-                            <li>Basic puzzle</li>
-                        </ul>
-                             <a href="https://github.com/DenSheneer/PP1UnrealEngine/releases/tag/v1.0.1">Download from GitHub</a>
+                    <ul>
+                        <li>Projectiles</li>
+                        <li>Third person aiming</li>
+                        <li>Pickups</li>
+                        <li>Player movement</li>
+                        <li>Menus</li>
+                        <li>Basic puzzle</li>
+                    </ul>
+                    <a href="https://github.com/DenSheneer/PP1UnrealEngine/releases/tag/v1.0.1">Download from GitHub</a>
                     </p>
                 </figcaption>
             </figure>
@@ -108,15 +112,15 @@
                 <figcaption>
                     <h3>Garbage Gary. A project for Oyfo museum made with Unity</h3>
                     <p>
-                        <ul>
-                            <li>Animation switching</li>
-                            <li>Sound player programming</li>
-                            <li>UI programming</li>
-                            <li>Gameplay programming</li>
-                            <li>Maintaining version control</li>
-                        </ul>
-                        More of this project below!<br>
-                        <a href="https://youtu.be/Nn0hLqFrPOk">View the game trailer</a>
+                    <ul>
+                        <li>Animation switching</li>
+                        <li>Sound player programming</li>
+                        <li>UI programming</li>
+                        <li>Gameplay programming</li>
+                        <li>Maintaining version control</li>
+                    </ul>
+                    More of this project below!<br>
+                    <a href="https://youtu.be/Nn0hLqFrPOk">View the game trailer</a>
                     </p>
                 </figcaption>
             </figure>
@@ -125,12 +129,12 @@
                 <figcaption>
                     <h3>For Shore. A coop game made with Unity</h3>
                     <p>
-                        <ul>
-                            <li>Designing & implementing player controls</li>
-                            <li>Animation switching</li>
-                            <li>Sound player programming</li>
-                            <li>Gameplay programming</li>
-                        </ul>
+                    <ul>
+                        <li>Designing & implementing player controls</li>
+                        <li>Animation switching</li>
+                        <li>Sound player programming</li>
+                        <li>Gameplay programming</li>
+                    </ul>
                     </p>
                 </figcaption>
             </figure>
@@ -138,12 +142,12 @@
                 <img src="images/physics_game.webp" alt="physicsGamePicture">
                 <figcaption>
                     <h3>A physics-based game</h3>
-                    <p>                        
-                        <ul>
-                            <li>2D physics programming</li>
-                            <li>UI programming</li>
-                            <li>Gameplay programming</li>
-                        </ul>
+                    <p>
+                    <ul>
+                        <li>2D physics programming</li>
+                        <li>UI programming</li>
+                        <li>Gameplay programming</li>
+                    </ul>
                     </p>
                 </figcaption>
             </figure>
@@ -151,30 +155,15 @@
     </main>
     <aside>
         <div id="aside"></div>
-        <div id="returnLink"></div>
-        
-    <script>
-        // Fetch and inject the aside content
-        fetch('aside.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('aside').innerHTML = html;
-            })
-            .catch(error => console.error('Error fetching aside HTML:', error));
-    
-        // Function to check the current page and inject the return link if necessary
-        window.onload = function() {
-            var currentPage = window.location.pathname.split("/").pop();
-            if (currentPage !== 'index.html') {
-                fetch('returnLink.html')
-                    .then(response => response.text())
-                    .then(html => {
-                        document.getElementById('returnLink').innerHTML = html;
-                    })
-                    .catch(error => console.error('Error fetching returnLink HTML:', error));
-            }
-        };
-    </script>
+        <script>
+            // Fetch and inject the aside content
+            fetch('aside.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('aside').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching aside HTML:', error));
+        </script>
     </aside>
 
 </body>

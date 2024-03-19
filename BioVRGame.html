@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3F5SLKPH7R" type="text/javascript">
-</script>
+    </script>
     <script type="text/javascript">
-window.dataLayer = window.dataLayer || [];
-    function gtag() {
-    dataLayer.push(arguments);
-}
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-gtag('js', new Date());
+        gtag('js', new Date());
 
-    gtag('config', 'G-3F5SLKPH7R');
+        gtag('config', 'G-3F5SLKPH7R');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -38,14 +39,24 @@ gtag('js', new Date());
         <article>
             <h1>BioVRCity</h1>
 
-            <p>This is a project made in collaboration with the <a href="https://naturadocet.nl/">Natura Docet</a> museum in Denekamp and <a href="https://www.saxion.edu/about-saxion/green-office">Saxion Green office</a>. The goal of the project is to create awareness for the small creatures living in a city environment like ants, bees and worms. The project is a Virtual Reality game in which the user is tasked with managing the environment. Based on what choices the players makes, more or less different creatures will be present in the environment.</p>
+            <p>This is a project made in collaboration with the <a href="https://naturadocet.nl/">Natura Docet</a>
+                museum in Denekamp and <a href="https://www.saxion.edu/about-saxion/green-office">Saxion Green
+                    office</a>. The goal of the project is to create awareness for the small creatures living in a city
+                environment like ants, bees and worms. The project is a Virtual Reality game in which the user is tasked
+                with managing the environment. Based on what choices the players makes, more or less different creatures
+                will be present in the environment.</p>
 
-            <p>Link to my blog on this project can be found <a href="https://imts-team-biodiversity.notion.site/Denise-e50b4e4f0df345cbbcad14190a8a9c02">here!</a></p>
+            <p>Link to my blog on this project can be found <a
+                    href="https://imts-team-biodiversity.notion.site/Denise-e50b4e4f0df345cbbcad14190a8a9c02">here!</a>
+            </p>
         </article>
 
         <article>
             <figure>
-                <iframe width="100%" height="720" src="https://www.youtube.com/embed/R2EtxmxqDSQ" title="Trailer BiodiVRsity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                <iframe width="100%" height="720" src="https://www.youtube.com/embed/R2EtxmxqDSQ"
+                    title="Trailer BiodiVRsity" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen=""></iframe>
 
                 <figcaption>
                     <h3>Game trailer</h3>
@@ -125,7 +136,9 @@ gtag('js', new Date());
                     <h3>Insect Hotel</h3>
 
                     <ul>
-                        <li>Uses a modified version of my personally developed <a href="https://github.com/DenSheneer/DenisesVRExpansionExpansion">Item Slot Plugin</a>.</li>
+                        <li>Uses a modified version of my personally developed <a
+                                href="https://github.com/DenSheneer/DenisesVRExpansionExpansion">Item Slot Plugin</a>.
+                        </li>
 
                         <li>Now with clear highlights (red in the picture) as soon as the user holds an object.</li>
                     </ul>
@@ -149,8 +162,11 @@ gtag('js', new Date());
             </figure>
 
             <div class="copyrightText">
-                <p>This project is a property developed for Saxion and Natura Docet. BioVRCity uses <a href="https://www.unrealengine.com/en-US">Unreal® Engine.</a> Unreal® is a trademark or registered trademark of Epic Games, Inc. in the United States of America and elsewhere.<br>
-                BioVRCity uses The MIT-licensed and open-source plugin <a href="https://vreue4.com/">VR Expansion Plugin</a>.<br></p>
+                <p>This project is a property developed for Saxion and Natura Docet. BioVRCity uses <a
+                        href="https://www.unrealengine.com/en-US">Unreal® Engine.</a> Unreal® is a trademark or
+                    registered trademark of Epic Games, Inc. in the United States of America and elsewhere.<br>
+                    BioVRCity uses The MIT-licensed and open-source plugin <a href="https://vreue4.com/">VR Expansion
+                        Plugin</a>.<br></p>
             </div>
         </article>
     </main>
@@ -169,17 +185,14 @@ gtag('js', new Date());
             .catch(error => console.error('Error fetching aside HTML:', error));
 
         // Function to check the current page and inject the return link if necessary
-        window.onload = function () {
-            var currentPage = window.location.pathname.split("/").pop();
-            if (currentPage !== 'index.html') {
-                fetch('returnLink.html')
-                    .then(response => response.text())
-                    .then(html => {
-                        document.getElementById('returnLink').innerHTML = html;
-                    })
-                    .catch(error => console.error('Error fetching returnLink HTML:', error));
-            }
-        };
+
+        fetch('returnLink.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('returnLink').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching returnLink HTML:', error));
     </script>
 </aside>
+
 </html>

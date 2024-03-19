@@ -143,18 +143,12 @@
             })
             .catch(error => console.error('Error fetching aside HTML:', error));
 
-        // Function to check the current page and inject the return link if necessary
-        window.onload = function () {
-            var currentPage = window.location.pathname.split("/").pop();
-            if (currentPage !== 'index.html') {
-                fetch('returnLink.html')
-                    .then(response => response.text())
-                    .then(html => {
-                        document.getElementById('returnLink').innerHTML = html;
-                    })
-                    .catch(error => console.error('Error fetching returnLink HTML:', error));
-            }
-        };
+        fetch('returnLink.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('returnLink').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching returnLink HTML:', error));
     </script>
 </aside>
 
