@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3F5SLKPH7R" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-3F5SLKPH7R');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <title>Denise's portfolio</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <div id="portraitBubble"></div>
+        <script>
+            fetch('portraitBubble.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('portraitBubble').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching common HTML:', error));
+        </script>
+
+        <article>
+            <h1>Run Escape (Godot)</h1>
+
+            <a href="https://github.com/DenSheneer/Portfolio4/releases/download/windows_ver1.0/run-escape_windows_v1.0.zip"><p>Download here! (Windows)</p></a>
+            <p>
+                To complete the trifecta of 'game engine mastery', I decided to make a game with Godot.
+                I had never used Godot before but I was very excited to try it as I am a big advocate
+                for Open-Source software. Furthermore, Godot supports C#, which I was already familiar with.
+            </p>
+            <p>
+                The result is the game 'Run Escape'! It is a top-down view game wherein the goal is to collect as many
+                coins as possible while avoiding the guard characters that chase you down! I found Godot very great to use 
+                and I hope it will catch on in the game industry. Personally, I will definitely keep using it. Perhaps for 
+                a Game Jam!
+            </p>
+        </article>
+
+        <article>
+            <figure>
+                <iframe width="100%" height="720" src="https://www.youtube.com/embed/R2EtxmxqDSQ"
+                    title="Showcase Rune Escape" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen=""></iframe>
+
+                <figcaption>
+                    <h3>Showcase video</h3>
+                </figcaption>
+            </figure>
+        </article>
+    </main>
+</body>
+<aside>
+    <div id="aside"></div>
+    <div id="returnLink"></div>
+
+    <script>
+        // Fetch and inject the aside content
+        fetch('aside.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('aside').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching aside HTML:', error));
+
+        // Function to check the current page and inject the return link if necessary
+
+        fetch('returnLink.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('returnLink').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching returnLink HTML:', error));
+    </script>
+</aside>
+
+</html>
